@@ -185,6 +185,8 @@ contract SpectreSubscriberToken is StandardToken, Pausable, TokenController {
     require(!tokenAddressesSet);
     require(_specDWallet != address(0));
     require(_specUWallet != address(0));
+    require(isContract(_specDWallet));
+    require(isContract(_specUWallet));
     specUWallet = _specUWallet;
     specDWallet = _specDWallet;
     tokenAddressesSet = true;
