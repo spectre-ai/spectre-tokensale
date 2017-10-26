@@ -22,7 +22,7 @@ contract SpectreSubscriberToken is StandardToken, Pausable, TokenController {
   uint256 constant public MIN_CAP                      = 5000000 * 10**decimals;
   uint256 constant public MIN_FUND_AMOUNT              = 1 ether;
   uint256 constant public TOKEN_PRICE                  = 0.0005 ether;
-  uint256 constant public WHITELIST_PERIOD             = 3 days;
+  uint256 constant public WHITELIST_PERIOD             = 2 hours;
 
   address public specWallet;
   address public specDWallet;
@@ -296,7 +296,7 @@ contract SpectreSubscriberToken is StandardToken, Pausable, TokenController {
     require(_to == specDWallet || _to == specUWallet);
     require(isContract(_to));
     //owner can transfer tokens on behalf of users after 28 days
-    if (msg.sender == owner && getNow() > saleEnd + 28 days) {
+    if (msg.sender == owner && getNow() > saleEnd + 1 hours) {
       OwnerTransfer(_from, _to, _value);
     } else {
       uint256 _allowance = allowed[_from][msg.sender];

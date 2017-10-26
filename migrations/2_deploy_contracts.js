@@ -3,24 +3,23 @@ var MiniMeTokenFactory = artifacts.require("./MiniMeTokenFactory.sol");
 var ProfitSharing = artifacts.require("./ProfitSharing.sol");
 
 //NB - change from mocked contracts to non-mocked version
-var SpectreUtilityToken = artifacts.require("./SpectreUtilityTokenMock.sol");
-var SpectreDividendToken = artifacts.require("./SpectreDividendTokenMock.sol");
-var SpectreSubscriberToken = artifacts.require("./SpectreSubscriberTokenMock.sol");
+var SpectreUtilityToken = artifacts.require("./SpectreUtilityToken.sol");
+var SpectreDividendToken = artifacts.require("./SpectreDividendToken.sol");
+var SpectreSubscriberToken = artifacts.require("./SpectreSubscriberToken.sol");
 
 //NB - set real addresses
 var OWNER = web3.eth.accounts[0];
-var WALLET = web3.eth.accounts[1];
-var SPECTRE_TEAM = web3.eth.accounts[1];
-var MANAGEMENT_LOCKED = web3.eth.accounts[2];
-var OPTION_POOL = web3.eth.accounts[3];
-
+var WALLET = "0xf6548e8ab773f3cb6f2b198cacf28a3d7dc34086";
+var SPECTRE_TEAM = "0x5de1419d080a6079e6aa98bb0c9c4dfdc67efffc";
+var MANAGEMENT_LOCKED = "0x979fcd1319f49317e4b1cf87e0a6f7f13531e332";
+var OPTION_POOL = "0x557287965b1664f1ca2f387c023e56f321174b35";
 
 //NB - confirm timings
-var presaleStart = 1509105600; //12am GMT 27th Oct
-var presaleEnd = 1509883200; //12am GMT 5th Nov
-var saleStart = 1510920000; //12am GMT 17th Nov
-var saleEnd = 1512907200; //12am GMT 10th Dec
-var discountSaleEnd = 1511524800; //9am GMT 24th Nov
+var presaleStart = 1508994000; //5 AM 26th
+var presaleEnd = 1509008400; // 9 AM 26th
+var saleStart = 1509012000; // 10 AM 26th
+var saleEnd = 1509026400; // 2 PM 26th
+var discountSaleEnd = 1509022800; // 1 PM 26th
 
 //Owner of below contracts will be truffle deployment address
 module.exports = async function(deployer) {
