@@ -11,7 +11,7 @@ contract SpectreUtilityToken is SpectreToken {
         0,                       // no snapshot block number from parent
         "Spectre Utility Token",           // Token name
         6,                       // Decimals
-        "SPECU",                   // Symbol
+        "SXU",                   // Symbol
         true                    // Enable transfers
       )
     {}

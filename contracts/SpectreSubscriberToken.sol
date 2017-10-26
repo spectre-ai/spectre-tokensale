@@ -14,7 +14,7 @@ contract SpectreSubscriberToken is StandardToken, Pausable, TokenController {
   using SafeMath for uint;
 
   string public constant name = "SPECTRE SUBSCRIBER TOKEN";
-  string public constant symbol = "SPECT";
+  string public constant symbol = "SXS";
   uint256 public constant decimals = 18;
 
   uint256 constant public TOKENS_AVAILABLE             = 240000000 * 10**decimals;

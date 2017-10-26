@@ -11,7 +11,7 @@ contract SpectreDividendToken is SpectreToken {
         0,                       // no snapshot block number from parent
         "Spectre Dividend Token",           // Token name
         6,                       // Decimals
-        "SPECD",                   // Symbol
+        "SXD",                   // Symbol
         true                    // Enable transfers
       )
     {}
