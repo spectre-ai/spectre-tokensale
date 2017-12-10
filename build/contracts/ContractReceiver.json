@@ -1,5 +1,5 @@
 {
-  "contract_name": "ContractReceiver",
+  "contractName": "ContractReceiver",
   "abi": [
     {
       "constant": false,
@@ -20,11 +20,190 @@
       "name": "tokenFallback",
       "outputs": [],
       "payable": false,
+      "stateMutability": "nonpayable",
       "type": "function"
     }
   ],
-  "unlinked_binary": "0x",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.4.15;\n\n /*\n * Contract that is working with ERC223 tokens\n * This is an implementation of ContractReceiver provided here:\n * https://github.com/Dexaran/ERC223-token-standard/blob/Recommended/Receiver_Interface.sol\n */\n\n contract ContractReceiver {\n\n    function tokenFallback(address _from, uint _value, bytes _data);\n\n}\n",
+  "sourcePath": "/Users/adamdossa/Development/Ethereum/spectre-tokensale/contracts/ContractReceiver.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/Users/adamdossa/Development/Ethereum/spectre-tokensale/contracts/ContractReceiver.sol",
+      "exportedSymbols": {
+        "ContractReceiver": [
+          11
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".15"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "0:24:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            11
+          ],
+          "name": "ContractReceiver",
+          "scope": 12
+        },
+        "children": [
+          {
+            "attributes": {
+              "body": null,
+              "constant": false,
+              "implemented": false,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "tokenFallback",
+              "payable": false,
+              "scope": 11,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_from",
+                      "scope": 10,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 2,
+                        "name": "ElementaryTypeName",
+                        "src": "295:7:0"
+                      }
+                    ],
+                    "id": 3,
+                    "name": "VariableDeclaration",
+                    "src": "295:13:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_value",
+                      "scope": 10,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 4,
+                        "name": "ElementaryTypeName",
+                        "src": "310:4:0"
+                      }
+                    ],
+                    "id": 5,
+                    "name": "VariableDeclaration",
+                    "src": "310:11:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_data",
+                      "scope": 10,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes memory",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes",
+                          "type": "bytes storage pointer"
+                        },
+                        "id": 6,
+                        "name": "ElementaryTypeName",
+                        "src": "323:5:0"
+                      }
+                    ],
+                    "id": 7,
+                    "name": "VariableDeclaration",
+                    "src": "323:11:0"
+                  }
+                ],
+                "id": 8,
+                "name": "ParameterList",
+                "src": "294:41:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 9,
+                "name": "ParameterList",
+                "src": "335:0:0"
+              }
+            ],
+            "id": 10,
+            "name": "FunctionDefinition",
+            "src": "272:64:0"
+          }
+        ],
+        "id": 11,
+        "name": "ContractDefinition",
+        "src": "239:100:0"
+      }
+    ],
+    "id": 12,
+    "name": "SourceUnit",
+    "src": "0:340:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
   "networks": {},
-  "schema_version": "0.0.5",
-  "updated_at": 1509044661588
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2017-12-10T20:14:54.694Z"
 }
