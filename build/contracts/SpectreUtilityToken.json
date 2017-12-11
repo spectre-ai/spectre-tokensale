@@ -908,7 +908,7 @@
       "absolutePath": "/Users/adamdossa/Development/Ethereum/spectre-tokensale/contracts/SpectreUtilityToken.sol",
       "exportedSymbols": {
         "SpectreUtilityToken": [
-          3815
+          3912
         ]
       }
     },
@@ -922,47 +922,47 @@
             ".15"
           ]
         },
-        "id": 3796,
+        "id": 3893,
         "name": "PragmaDirective",
         "src": "0:24:8"
       },
       {
         "attributes": {
-          "SourceUnit": 3795,
+          "SourceUnit": 3892,
           "absolutePath": "/Users/adamdossa/Development/Ethereum/spectre-tokensale/contracts/SpectreToken.sol",
           "file": "./SpectreToken.sol",
-          "scope": 3816,
+          "scope": 3913,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 3797,
+        "id": 3894,
         "name": "ImportDirective",
         "src": "26:28:8"
       },
       {
         "attributes": {
           "contractDependencies": [
-            135,
             11,
+            135,
             1161,
-            3794,
-            4264
+            3891,
+            4361
           ],
           "contractKind": "contract",
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            3815,
-            3794,
+            3912,
+            3891,
             11,
-            4264,
+            4361,
             1161,
             135
           ],
           "name": "SpectreUtilityToken",
-          "scope": 3816
+          "scope": 3913
         },
         "children": [
           {
@@ -976,15 +976,15 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "SpectreToken",
-                  "referencedDeclaration": 3794,
+                  "referencedDeclaration": 3891,
                   "type": "contract SpectreToken"
                 },
-                "id": 3798,
+                "id": 3895,
                 "name": "UserDefinedTypeName",
                 "src": "88:12:8"
               }
             ],
-            "id": 3799,
+            "id": 3896,
             "name": "InheritanceSpecifier",
             "src": "88:12:8"
           },
@@ -995,7 +995,7 @@
               "isConstructor": true,
               "name": "SpectreUtilityToken",
               "payable": false,
-              "scope": 3815,
+              "scope": 3912,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "public"
@@ -1007,7 +1007,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "_tokenFactory",
-                      "scope": 3814,
+                      "scope": 3911,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -1020,17 +1020,17 @@
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 3800,
+                        "id": 3897,
                         "name": "ElementaryTypeName",
                         "src": "137:7:8"
                       }
                     ],
-                    "id": 3801,
+                    "id": 3898,
                     "name": "VariableDeclaration",
                     "src": "137:21:8"
                   }
                 ],
-                "id": 3802,
+                "id": 3899,
                 "name": "ParameterList",
                 "src": "136:23:8"
               },
@@ -1041,7 +1041,7 @@
                   ]
                 },
                 "children": [],
-                "id": 3812,
+                "id": 3909,
                 "name": "ParameterList",
                 "src": "538:0:8"
               },
@@ -1057,7 +1057,7 @@
                       "type": "type(contract MiniMeToken)",
                       "value": "MiniMeToken"
                     },
-                    "id": 3803,
+                    "id": 3900,
                     "name": "Identifier",
                     "src": "166:11:8"
                   },
@@ -1067,11 +1067,11 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 3801,
+                      "referencedDeclaration": 3898,
                       "type": "address",
                       "value": "_tokenFactory"
                     },
-                    "id": 3804,
+                    "id": 3901,
                     "name": "Identifier",
                     "src": "187:13:8"
                   },
@@ -1088,7 +1088,7 @@
                       "type": "int_const 0",
                       "value": "0x0"
                     },
-                    "id": 3805,
+                    "id": 3902,
                     "name": "Literal",
                     "src": "210:3:8"
                   },
@@ -1105,7 +1105,7 @@
                       "type": "int_const 0",
                       "value": "0"
                     },
-                    "id": 3806,
+                    "id": 3903,
                     "name": "Literal",
                     "src": "262:1:8"
                   },
@@ -1122,7 +1122,7 @@
                       "type": "literal_string \"Spectre Utility Token\"",
                       "value": "Spectre Utility Token"
                     },
-                    "id": 3807,
+                    "id": 3904,
                     "name": "Literal",
                     "src": "335:23:8"
                   },
@@ -1139,7 +1139,7 @@
                       "type": "int_const 18",
                       "value": "18"
                     },
-                    "id": 3808,
+                    "id": 3905,
                     "name": "Literal",
                     "src": "392:2:8"
                   },
@@ -1156,7 +1156,7 @@
                       "type": "literal_string \"SXUT\"",
                       "value": "SXUT"
                     },
-                    "id": 3809,
+                    "id": 3906,
                     "name": "Literal",
                     "src": "438:6:8"
                   },
@@ -1173,12 +1173,12 @@
                       "type": "bool",
                       "value": "true"
                     },
-                    "id": 3810,
+                    "id": 3907,
                     "name": "Literal",
                     "src": "482:4:8"
                   }
                 ],
-                "id": 3811,
+                "id": 3908,
                 "name": "ModifierInvocation",
                 "src": "166:367:8"
               },
@@ -1189,22 +1189,22 @@
                   ]
                 },
                 "children": [],
-                "id": 3813,
+                "id": 3910,
                 "name": "Block",
                 "src": "538:2:8"
               }
             ],
-            "id": 3814,
+            "id": 3911,
             "name": "FunctionDefinition",
             "src": "108:432:8"
           }
         ],
-        "id": 3815,
+        "id": 3912,
         "name": "ContractDefinition",
         "src": "56:487:8"
       }
     ],
-    "id": 3816,
+    "id": 3913,
     "name": "SourceUnit",
     "src": "0:544:8"
   },
@@ -1214,5 +1214,5 @@
   },
   "networks": {},
   "schemaVersion": "1.0.1",
-  "updatedAt": "2017-12-10T20:14:54.743Z"
+  "updatedAt": "2017-12-11T10:38:27.102Z"
 }

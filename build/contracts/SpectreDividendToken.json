@@ -928,7 +928,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 3795,
+          "SourceUnit": 3892,
           "absolutePath": "/Users/adamdossa/Development/Ethereum/spectre-tokensale/contracts/SpectreToken.sol",
           "file": "./SpectreToken.sol",
           "scope": 1646,
@@ -944,20 +944,20 @@
       {
         "attributes": {
           "contractDependencies": [
-            135,
             11,
+            135,
             1161,
-            3794,
-            4264
+            3891,
+            4361
           ],
           "contractKind": "contract",
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
             1645,
-            3794,
+            3891,
             11,
-            4264,
+            4361,
             1161,
             135
           ],
@@ -976,7 +976,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "SpectreToken",
-                  "referencedDeclaration": 3794,
+                  "referencedDeclaration": 3891,
                   "type": "contract SpectreToken"
                 },
                 "id": 1628,
@@ -1214,5 +1214,5 @@
   },
   "networks": {},
   "schemaVersion": "1.0.1",
-  "updatedAt": "2017-12-10T20:14:54.730Z"
+  "updatedAt": "2017-12-11T10:38:27.091Z"
 }

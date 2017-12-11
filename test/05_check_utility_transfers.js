@@ -18,6 +18,7 @@ contract('Check Utility Transfers', function (accounts) {
 
   var TOKENSDEC = 1000000000000000000;
   var transferTime = 1513112400;
+  var saleEnd = 1512907200;
 
   // =========================================================================
   it("0. initialise all subscriber tokens", async () => {
@@ -87,7 +88,7 @@ contract('Check Utility Transfers', function (accounts) {
     });
 
     //Transfer to utility token
-    await spectreSubscriberToken.setMockedNow(transferTime + 1 + 28 * 24 * 60 * 60);
+    await spectreSubscriberToken.setMockedNow(saleEnd + 1 + 28 * 24 * 60 * 60);
     await spectreSubscriberToken.transferFrom(investor_1, SpectreUtilityToken.address, 500000 * TOKENSDEC, {from: OWNER});
 
     //Check investor balances

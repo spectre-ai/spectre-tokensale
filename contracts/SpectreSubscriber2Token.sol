@@ -8,7 +8,6 @@ import './ContractReceiver.sol';
 import './MiniMeToken.sol';
 
 /// @title SpecToken - Crowdfunding code for the Spectre.ai Token Sale
-/// @author Parthasarathy Ramanujam
 contract SpectreSubscriber2Token is StandardToken, Ownable, TokenController {
   using SafeMath for uint;
 
@@ -16,11 +15,14 @@ contract SpectreSubscriber2Token is StandardToken, Ownable, TokenController {
   string public constant symbol = "SXS2";
   uint256 public constant decimals = 18;
 
+  uint256 public constant TOTAL_CAP = 91627765897795994966351100;
+
   address public specWallet;
   address public specDWallet;
   address public specUWallet;
 
   uint256 public transferTime = 0;
+  uint256 public saleEnd = 1512907200;
   bool public tokenAddressesSet = false;
   uint256 constant D160 = 0x0010000000000000000000000000000000000000000;
 
@@ -39,9 +41,16 @@ contract SpectreSubscriber2Token is StandardToken, Ownable, TokenController {
   }
 
   function mint(address _to, uint256 _amount) onlyOwner {
+    require(totalSupply.add(_amount) <= TOTAL_CAP);
     balances[_to] = balances[_to].add(_amount);
     totalSupply = totalSupply.add(_amount);
     Transfer(0, _to, _amount);
+  }
+
+  function burn(address _to, uint256 _amount) onlyOwner {
+    balances[_to] = balances[_to].sub(_amount);
+    totalSupply = totalSupply.sub(_amount);
+    Transfer(_to, 0, _amount);
   }
 
   //@notice Function to configure contract addresses
@@ -105,7 +114,7 @@ contract SpectreSubscriber2Token is StandardToken, Ownable, TokenController {
     require(_to == specDWallet || _to == specUWallet);
     require(isContract(_to));
     //owner can transfer tokens on behalf of users after 28 days
-    if (msg.sender == owner && getNow() > transferTime + 28 days) {
+    if (msg.sender == owner && getNow() > saleEnd + 28 days) {
       OwnerTransfer(_from, _to, _value);
     } else {
       uint256 _allowance = allowed[_from][msg.sender];
@@ -126,6 +135,17 @@ contract SpectreSubscriber2Token is StandardToken, Ownable, TokenController {
       address addr = address(data[i] & (D160 - 1));
       uint256 amount = data[i] / D160;
       mint(addr, amount);
+    }
+  }
+
+  // data is an array of uint256s. Each uint256 represents a address and amount.
+  // The 160 LSB is the address that wants to be added
+  // The 96 MSB is the amount of to be minted for that address
+  function multiBurn(uint256[] data) public onlyOwner {
+    for (uint256 i = 0; i < data.length; i++) {
+      address addr = address(data[i] & (D160 - 1));
+      uint256 amount = data[i] / D160;
+      burn(addr, amount);
     }
   }
 

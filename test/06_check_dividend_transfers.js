@@ -18,6 +18,7 @@ contract('Check Dividend Transfers', function (accounts) {
 
   var TOKENSDEC = 1000000000000000000;
   var transferTime = 1513112400;
+  var saleEnd = 1512907200;
 
 
   // =========================================================================
@@ -53,7 +54,7 @@ contract('Check Dividend Transfers', function (accounts) {
     var spectreDividendToken = await SpectreDividendToken.deployed();
 
     await spectreSubscriberToken.setMockedNow(transferTime + 1);
-    
+
     //Transfer to dividend token
     await spectreSubscriberToken.transfer(SpectreDividendToken.address, 1000000 * TOKENSDEC, {from: investor_2});
 
@@ -89,7 +90,7 @@ contract('Check Dividend Transfers', function (accounts) {
     });
 
     //Transfer to utility token
-    await spectreSubscriberToken.setMockedNow(transferTime + 1 + 28 * 24 * 60 * 60);
+    await spectreSubscriberToken.setMockedNow(saleEnd + 1 + 28 * 24 * 60 * 60);
     await spectreSubscriberToken.transferFrom(investor_2, SpectreDividendToken.address, 1000000 * TOKENSDEC, {from: OWNER});
 
     //Check investor balances
