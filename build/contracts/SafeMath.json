@@ -1,8 +1,8 @@
 {
   "contractName": "SafeMath",
   "abi": [],
-  "bytecode": "0x60606040523415600e57600080fd5b603580601b6000396000f3006060604052600080fd00a165627a7a72305820ade971e1217d2b46e53509269e46ac252cbe23c158328da3d9e4cd0a7f16e8da0029",
-  "deployedBytecode": "0x6060604052600080fd00a165627a7a72305820ade971e1217d2b46e53509269e46ac252cbe23c158328da3d9e4cd0a7f16e8da0029",
+  "bytecode": "0x60606040523415600e57600080fd5b603580601b6000396000f3006060604052600080fd00a165627a7a723058207bbc98c12bf84b514cc3fc38d47cece4332ab1c36199c5e655c61cc2bf6182590029",
+  "deployedBytecode": "0x6060604052600080fd00a165627a7a723058207bbc98c12bf84b514cc3fc38d47cece4332ab1c36199c5e655c61cc2bf6182590029",
   "sourceMap": "117:698:15:-;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "117:698:15:-;;;;;",
   "source": "pragma solidity ^0.4.11;\n\n\n/**\n * @title SafeMath\n * @dev Math operations with safety checks that throw on error\n */\nlibrary SafeMath {\n  function mul(uint256 a, uint256 b) internal constant returns (uint256) {\n    uint256 c = a * b;\n    assert(a == 0 || c / a == b);\n    return c;\n  }\n\n  function div(uint256 a, uint256 b) internal constant returns (uint256) {\n    // assert(b > 0); // Solidity automatically throws when dividing by 0\n    uint256 c = a / b;\n    // assert(a == b * c + a % b); // There is no case in which this doesn't hold\n    return c;\n  }\n\n  function sub(uint256 a, uint256 b) internal constant returns (uint256) {\n    assert(b <= a);\n    return a - b;\n  }\n\n  function add(uint256 a, uint256 b) internal constant returns (uint256) {\n    uint256 c = a + b;\n    assert(c >= a);\n    return c;\n  }\n}\n",
@@ -1319,5 +1319,5 @@
   },
   "networks": {},
   "schemaVersion": "1.0.1",
-  "updatedAt": "2017-12-11T10:38:27.107Z"
+  "updatedAt": "2017-12-11T11:23:31.419Z"
 }

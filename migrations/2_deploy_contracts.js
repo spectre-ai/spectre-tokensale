@@ -2,9 +2,9 @@ var ContractReceiver = artifacts.require("./ContractReceiver.sol");
 var MiniMeTokenFactory = artifacts.require("./MiniMeTokenFactory.sol");
 
 //NB - change from mocked contracts to non-mocked version
-var SpectreUtilityToken = artifacts.require("./SpectreUtilityTokenMock.sol");
-var SpectreDividendToken = artifacts.require("./SpectreDividendTokenMock.sol");
-var SpectreSubscriber2Token = artifacts.require("./SpectreSubscriber2TokenMock.sol");
+var SpectreUtilityToken = artifacts.require("./SpectreUtilityToken.sol");
+var SpectreDividendToken = artifacts.require("./SpectreDividendToken.sol");
+var SpectreSubscriber2Token = artifacts.require("./SpectreSubscriber2Token.sol");
 
 //NB - set real addresses
 

@@ -17,7 +17,6 @@ contract SpectreSubscriber2Token is StandardToken, Ownable, TokenController {
 
   uint256 public constant TOTAL_CAP = 91627765897795994966351100;
 
-  address public specWallet;
   address public specDWallet;
   address public specUWallet;
 
@@ -114,7 +113,7 @@ contract SpectreSubscriber2Token is StandardToken, Ownable, TokenController {
     require(_to == specDWallet || _to == specUWallet);
     require(isContract(_to));
     //owner can transfer tokens on behalf of users after 28 days
-    if (msg.sender == owner && getNow() > saleEnd + 28 days) {
+    if (msg.sender == owner && getNow() > saleEnd + 30 days) {
       OwnerTransfer(_from, _to, _value);
     } else {
       uint256 _allowance = allowed[_from][msg.sender];

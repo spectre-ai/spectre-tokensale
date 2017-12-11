@@ -1,8 +1,8 @@
 {
   "contractName": "Math",
   "abi": [],
-  "bytecode": "0x60606040523415600e57600080fd5b603580601b6000396000f3006060604052600080fd00a165627a7a723058208cfdbc18e2740b7656cf642f029480034d8d025c0ae97c627cfaa8acfe9171bb0029",
-  "deployedBytecode": "0x6060604052600080fd00a165627a7a723058208cfdbc18e2740b7656cf642f029480034d8d025c0ae97c627cfaa8acfe9171bb0029",
+  "bytecode": "0x60606040523415600e57600080fd5b603580601b6000396000f3006060604052600080fd00a165627a7a72305820887f88a81e6568b13755caff2f849163b538cc8f6f81f134afbe796879a77a8c0029",
+  "deployedBytecode": "0x6060604052600080fd00a165627a7a72305820887f88a81e6568b13755caff2f849163b538cc8f6f81f134afbe796879a77a8c0029",
   "sourceMap": "83:445:14:-;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "83:445:14:-;;;;;",
   "source": "pragma solidity ^0.4.11;\n\n/**\n * @title Math\n * @dev Assorted math operations\n */\n\nlibrary Math {\n  function max64(uint64 a, uint64 b) internal constant returns (uint64) {\n    return a >= b ? a : b;\n  }\n\n  function min64(uint64 a, uint64 b) internal constant returns (uint64) {\n    return a < b ? a : b;\n  }\n\n  function max256(uint256 a, uint256 b) internal constant returns (uint256) {\n    return a >= b ? a : b;\n  }\n\n  function min256(uint256 a, uint256 b) internal constant returns (uint256) {\n    return a < b ? a : b;\n  }\n}\n",
@@ -948,5 +948,5 @@
   },
   "networks": {},
   "schemaVersion": "1.0.1",
-  "updatedAt": "2017-12-11T10:38:27.107Z"
+  "updatedAt": "2017-12-11T11:23:31.419Z"
 }
