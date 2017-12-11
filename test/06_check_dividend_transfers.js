@@ -90,7 +90,7 @@ contract('Check Dividend Transfers', function (accounts) {
     });
 
     //Transfer to utility token
-    await spectreSubscriberToken.setMockedNow(saleEnd + 1 + 28 * 24 * 60 * 60);
+    await spectreSubscriberToken.setMockedNow(saleEnd + 1 + 30 * 24 * 60 * 60);
     await spectreSubscriberToken.transferFrom(investor_2, SpectreDividendToken.address, 1000000 * TOKENSDEC, {from: OWNER});
 
     //Check investor balances
