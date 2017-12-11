@@ -9,7 +9,7 @@ contract SpectreUtilityToken is SpectreToken {
         _tokenFactory,
         0x0,                     // no parent token
         0,                       // no snapshot block number from parent
-        "Spectre Utility Token",           // Token name
+        "Spectre.ai U-Token",           // Token name
         18,                       // Decimals
         "SXUT",                   // Symbol
         true                    // Enable transfers
