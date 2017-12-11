@@ -1644,8 +1644,148 @@
       },
       "links": {},
       "address": "0x4c1bc6b16ab1845ca7538ee4167ef0a3d3f57bde"
+    },
+    "1512990126513": {
+      "events": {
+        "0xf54bf4ed226aa1df732802a8bd56e85755aab0a0ef7c2fbf204cf0de0765f073": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_now",
+              "type": "uint256"
+            }
+          ],
+          "name": "MockNow",
+          "type": "event"
+        },
+        "0x0bc2390103cdcea68787f9f22f8be92ccf20f5eae0bb850fbb70af78e366e4dd": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_spectreTeam",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_managementLocked",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_optionPool",
+              "type": "address"
+            }
+          ],
+          "name": "WalletAddressesSet",
+          "type": "event"
+        },
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event"
+        },
+        "0xf931edb47c50b4b4104c187b5814a9aef5f709e17e2ecf9617e860cacade929c": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "_token",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "_controller",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "ClaimedTokens",
+          "type": "event"
+        },
+        "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "_from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "_to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "Transfer",
+          "type": "event"
+        },
+        "0x086c875b377f900b07ce03575813022f05dd10ed7640b5282cf6d3c3fc352ade": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "_cloneToken",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_snapshotBlock",
+              "type": "uint256"
+            }
+          ],
+          "name": "NewCloneToken",
+          "type": "event"
+        },
+        "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "_owner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "_spender",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "Approval",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xcc1885b336552f259f7cda1693769e2afcf5ab25"
     }
   },
   "schemaVersion": "1.0.1",
-  "updatedAt": "2017-12-11T10:38:35.638Z"
+  "updatedAt": "2017-12-11T11:04:25.397Z"
 }

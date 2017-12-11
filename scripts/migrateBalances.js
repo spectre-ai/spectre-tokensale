@@ -19,7 +19,7 @@ const eth = web3.eth;
 
 var token = web3.eth.contract(tokenAbi).at(tokenAddress);
 
-const multiple = 50;
+const multiple = 100;
 const D160 = new BigNumber("10000000000000000000000000000000000000000", 16);
 
 const loadCsv = (cb) => {
